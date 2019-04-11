@@ -45,10 +45,10 @@ class PersistentDrawerLeft extends React.Component {
     const { classes, theme, children } = this.props;
     const { open } = this.state;
 
-    const menuItem = (name,icon) => {
+    const menuItem = (name,icon,path) => {
 
       return   <MenuItem>
-                <Link to="/about">
+                <Link to={"/"+path}>
                 <ListItemIcon>{icon}</ListItemIcon>
                 {name}
                 </Link>
@@ -57,8 +57,8 @@ class PersistentDrawerLeft extends React.Component {
 
     const getMenu = () => {
         return <MenuList>
-          {menuItem("About Me",<AccountIcon/>)}
-          {menuItem("Education",<SchoolIcon/>)}
+          {menuItem("About Me",<AccountIcon/>, "about")}
+          {menuItem("Education",<SchoolIcon/>, "education")}
           {menuItem("Experience",<TrendingUpIcon/>)}
           {menuItem("Skills",<CodeIcon/>)}
           {menuItem("Interests",<SchoolIcon/>)}

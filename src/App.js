@@ -9,8 +9,10 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Menu>
+          <switch>
             <Route path="/about" component={AboutMe}/>
             <Route path="/education" component={Education}/>
+            </switch>
         </Menu>
         </BrowserRouter>
 
