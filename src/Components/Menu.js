@@ -47,22 +47,23 @@ class PersistentDrawerLeft extends React.Component {
 
     const menuItem = (name,icon,path) => {
 
-      return   <MenuItem>
-                <Link to={"/"+path}>
-                <ListItemIcon>{icon}</ListItemIcon>
-                {name}
-                </Link>
-              </MenuItem>
+      return  <Link to={"/"+path}>
+                <MenuItem>
+                  <ListItemIcon>{icon}</ListItemIcon>
+                    {name}
+                  </MenuItem>
+              </Link>
+
     }
 
     const getMenu = () => {
         return <MenuList>
           {menuItem("About Me",<AccountIcon/>, "about")}
           {menuItem("Education",<SchoolIcon/>, "education")}
-          {menuItem("Experience",<TrendingUpIcon/>)}
-          {menuItem("Skills",<CodeIcon/>)}
-          {menuItem("Interests",<SchoolIcon/>)}
-          {menuItem("Favorite Tech Books",<LocalLibraryIcon/>)}
+          {menuItem("Experience",<TrendingUpIcon/>, "experience")}
+          {menuItem("Skills",<CodeIcon/>, "skills")}
+          {menuItem("Interests",<SchoolIcon/>, "interests")}
+          {menuItem("Favorite Tech Books",<LocalLibraryIcon/>, "books")}
       </MenuList>;
       };
 
