@@ -21,6 +21,7 @@ import TrendingUpIcon from '@material-ui/icons/TrendingUpTwoTone';
 import CodeIcon from '@material-ui/icons/CodeTwoTone';
 import LocalLibraryIcon from '@material-ui/icons/LocalLibraryTwoTone'
 import styles from './Styles'
+import { Link } from 'react-router-dom';
 
 
 class PersistentDrawerLeft extends React.Component {
@@ -36,14 +37,21 @@ class PersistentDrawerLeft extends React.Component {
     this.setState({ open: false });
   };
 
+  handleMenuItemClick= () =>{
+
+  }
+
   render() {
     const { classes, theme, children } = this.props;
     const { open } = this.state;
 
     const menuItem = (name,icon) => {
-      return  <MenuItem>
+
+      return   <MenuItem>
+                <Link to="/about">
                 <ListItemIcon>{icon}</ListItemIcon>
                 {name}
+                </Link>
               </MenuItem>
     }
 
@@ -98,6 +106,7 @@ class PersistentDrawerLeft extends React.Component {
           <Divider />
           {getMenu()}
         </Drawer>
+
         <main
           className={classNames(classes.content, {
             [classes.contentShift]: open,
