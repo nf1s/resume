@@ -15,6 +15,11 @@ const styles = theme => ({
       textAlign: 'center',
       color: theme.palette.text.secondary,
     },
+    grid: {
+      alignItems: 'center',
+      textAlign: 'center',
+      justify: 'center',
+    }
   });
 
 const events = [
@@ -63,10 +68,8 @@ function Education (props) {
         return(
             <div className={classes.root}>
                 <Grid container spacing={24}>
-                    <Grid item xs={12}>
-                    <Paper className={classes.paper}>
-                        <h1>My Education</h1>
-                    </Paper>
+                    <Grid item xs={12} className={ classes.grid}>
+                        <h1>Education</h1>
                     </Grid>
                     <Grid item xs={12}>
                     <Timeline events={events}/>

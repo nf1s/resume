@@ -1,6 +1,5 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import { Timeline } from 'react-material-timeline';
 import { Avatar } from '@material-ui/core';
@@ -15,6 +14,11 @@ const styles = theme => ({
       textAlign: 'center',
       color: theme.palette.text.secondary,
     },
+    grid: {
+      alignItems: 'center',
+      textAlign: 'center',
+      justify: 'center',
+    }
   });
 
 const events = [
@@ -38,10 +42,8 @@ function Experience (props) {
         return(
             <div className={classes.root}>
                 <Grid container spacing={24}>
-                    <Grid item xs={12}>
-                        <Paper className={classes.paper}>
-                            <h1>My Work Experience</h1>
-                        </Paper>
+                    <Grid item xs={12} className={classes.grid}>
+                            <h1>Work Experience</h1>
                     </Grid>
                     <Grid item xs={12}>
                     <Timeline events={events}/>
