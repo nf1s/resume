@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import LinearDeterminate from './ProgressBar'
+import ProgressBar from './ProgressBar'
 
 class Interests extends Component {
 
@@ -7,7 +7,7 @@ class Interests extends Component {
         return(
             <div>
             <h1>This is Interests Page</h1>
-            <LinearDeterminate final={80}/>
+            <ProgressBar finish={80}/>
             </div>
         );
     }

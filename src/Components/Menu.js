@@ -21,6 +21,7 @@ import TrendingUpIcon from '@material-ui/icons/TrendingUpTwoTone';
 import CodeIcon from '@material-ui/icons/CodeTwoTone';
 import LocalLibraryIcon from '@material-ui/icons/LocalLibraryTwoTone'
 import { Link } from 'react-router-dom';
+import pink from '@material-ui/core/colors/pink';
 
 const drawerWidth = 240;
 
@@ -28,6 +29,10 @@ const styles = theme => ({
 
     root: {
       display: 'flex',
+    },
+    menuBackground: {
+      color: '#fff',
+      backgroundColor: pink[900],
     },
     appBar: {
       transition: theme.transitions.create(['margin', 'width'], {
@@ -82,9 +87,7 @@ const styles = theme => ({
       marginLeft: 0,
     },
   });
-
-
-
+ 
 class PersistentDrawerLeft extends React.Component {
   state = {
     open: false,
@@ -111,7 +114,7 @@ class PersistentDrawerLeft extends React.Component {
               </Link>
     }
 
-    const getMenu = () => {
+    const getMenuItems = () => {
         return <MenuList>
           {menuItem("About Me",<AccountIcon/>, "about")}
           {menuItem("Education",<SchoolIcon/>, "education")}
@@ -127,7 +130,9 @@ class PersistentDrawerLeft extends React.Component {
         <CssBaseline />
         <AppBar
           position="fixed"
-          className={classNames(classes.appBar, {
+          className={classNames(classes.appBar,
+            classes.menuBackground, 
+            {
             [classes.appBarShift]: open,
           })}
         >
@@ -160,7 +165,7 @@ class PersistentDrawerLeft extends React.Component {
             </IconButton>
           </div>
           <Divider />
-          {getMenu()}
+          {getMenuItems()}
         </Drawer>
 
         <main

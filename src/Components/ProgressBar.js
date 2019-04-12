@@ -9,17 +9,16 @@ const styles = {
   },
 };
 
-class LinearDeterminate extends React.Component {
+class ProgressBar extends React.Component {
 constructor(props){
     super(props)
     this.state = {
         completed: 0,
-        final: props.final
+        finish: props.finish
     };
 }
 
   componentDidMount() {
-    console.log(this.props.final);
     this.timer = setInterval(this.progress, 200);
   }
 
@@ -30,7 +29,7 @@ constructor(props){
   progress = () => {
     const { completed } = this.state;
     const diff = Math.random() * 50;
-    this.setState({ completed: Math.min(completed + diff, this.state.final) });
+    this.setState({ completed: Math.min(completed + diff, this.state.finish) });
   };
 
   render() {
@@ -43,8 +42,8 @@ constructor(props){
   }
 }
 
-LinearDeterminate.propTypes = {
+ProgressBar.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(LinearDeterminate);
+export default withStyles(styles)(ProgressBar);
