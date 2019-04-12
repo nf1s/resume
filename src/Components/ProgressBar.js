@@ -2,10 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import LinearProgress from '@material-ui/core/LinearProgress';
+import pink from '@material-ui/core/colors/pink';
 
 const styles = {
   root: {
     flexGrow: 1,
+  },
+  Background: {
+    color: '#fff',
+    backgroundColor: pink[900],
   },
 };
 

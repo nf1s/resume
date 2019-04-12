@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import { Timeline } from 'react-material-timeline';
 import { Avatar } from '@material-ui/core';
-import SchoolIcon from '@material-ui/icons/SchoolTwoTone';
+import SchoolIcon from '@material-ui/icons/SchoolSharp';
+import pink from '@material-ui/core/colors/pink';
 
 const styles = theme => ({
     root: {
@@ -27,56 +27,59 @@ const events = [
     title: 'Tallinn University of Technology, Estonia',
     subheader: 'Sep 2014 - Jun 2017' ,
     description: [ 'Masters Degree in Cyber Security' ],
-    icon: <Avatar><SchoolIcon/></Avatar>,
+    icon: <Avatar><SchoolIcon style={{ color: pink[900] }}/></Avatar>,
   },
   {
     title: 'University Of Tartu (Dual Degree), Estonia',
     subheader: 'Sep 2014 - Jun 2017' ,
     description: [ 'Dual Degree of Masters Degree in Cyber Security with Tallinn University of Technology' ],
-    icon: <Avatar><SchoolIcon/></Avatar>,
+    icon: <Avatar><SchoolIcon style={{ color: pink[700] }}/></Avatar>,
   },
   {
     title: 'Slovak Technical University of Technology Bratislava, Slovakia',
     subheader: 'Mar 2016 - Jun 2016' ,
     description: [ 'Exchange' ],
-    icon: <Avatar><SchoolIcon/></Avatar>,
+    icon: <Avatar><SchoolIcon style={{ color: pink[500] }}/></Avatar>,
   },
   {
     title: 'Chemnitz University of Technology, Germany',
     subheader: 'Oct 2015 - Feb 2016' ,
     description: [ 'Exchange' ],
-    icon: <Avatar><SchoolIcon/></Avatar>,
+    icon: <Avatar><SchoolIcon style={{ color: pink[300] }}/></Avatar>,
   },
   {
     title: 'loughborough university, UK',
     subheader: 'Sep 2008 - Jul 2013' ,
     description: [ 'Dual Degree of Bachelor\'s Degree in Electronics and Communications Engineering',
     ' in Partnership with The British University in Egypt' ],
-    icon: <Avatar><SchoolIcon/></Avatar>,
+    icon: <Avatar><SchoolIcon style={{ color: pink[200] }}/></Avatar>,
   },
   {
     title: 'The British University, Egypt',
     subheader: 'Sep 2008 - Jul 2013' ,
     description: [ 'Bachelor\'s Degree in Electronics and Communications Engineering' ],
-    icon: <Avatar><SchoolIcon/></Avatar>,
+    icon: <Avatar><SchoolIcon style={{ color: pink[100] }}/></Avatar>,
   }
 ];
 
-function Education (props) {
-    const { classes } = props;
+class Education extends Component {
+
+  render(){
+    const { classes } = this.props;
 
         return(
             <div className={classes.root}>
                 <Grid container spacing={24}>
-                    <Grid item xs={12} className={ classes.grid}>
+                    <Grid item xs={8} className={ classes.grid}>
                         <h1>Education</h1>
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid item xs={8}>
                     <Timeline events={events}/>
                     </Grid>
                 </Grid>
             </div>
         );
     }
+  }
 
 export default withStyles(styles)(Education);

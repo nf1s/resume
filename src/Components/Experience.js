@@ -1,9 +1,10 @@
-import React from 'react';
+import React , {Component} from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { Timeline } from 'react-material-timeline';
 import { Avatar } from '@material-ui/core';
-import WorkIcon from '@material-ui/icons/WorkOutlineRounded'
+import WorkIcon from '@material-ui/icons/WorkSharp'
+import pink from '@material-ui/core/colors/pink';
 
 const styles = theme => ({
     root: {
@@ -26,31 +27,32 @@ const events = [
     title: 'Hem Design Studio',
     subheader: 'Dec 2018 - Now (-1 year)' ,
     description: [ 'Full Stack Web Developer (React, Python/Django and Go)' ],
-    icon: <Avatar><WorkIcon/></Avatar>,
+    icon: <Avatar><WorkIcon  style={{ color: pink[900] }}/></Avatar>,
   },
   {
     title: 'Swedbank',
     subheader: 'Jan 2017 - Dec 2018 (2 Years)',
     description: [ 'Full Stack Web Developer (AngularJs, Jquery, Python/Flask)' ],
-    icon: <Avatar><WorkIcon/></Avatar>,
+    icon: <Avatar><WorkIcon  style={{ color: pink[700] }}/></Avatar>,
   }
 ];
 
-function Experience (props) {
-    const { classes } = props;
+class Experience extends Component{
+      render(){
+        const { classes } = this.props;
 
         return(
             <div className={classes.root}>
                 <Grid container spacing={24}>
-                    <Grid item xs={12} className={classes.grid}>
-                            <h1>Work Experience</h1>
+                    <Grid item xs={8} className={classes.grid}>
+                        <h1>Work Experience</h1>
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid item xs={8}>
                     <Timeline events={events}/>
                     </Grid>
                 </Grid>
             </div>
         );
     }
-
+  }
 export default withStyles(styles)(Experience);

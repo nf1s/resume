@@ -1,13 +1,10 @@
-import React, { Component } from 'react';
-import ProgressBar from './ProgressBar'
+import React, {Component} from 'react';
 
 class Interests extends Component {
-
     render(){
         return(
             <div>
             <h1>This is Interests Page</h1>
-            <ProgressBar finish={80}/>
             </div>
         );
     }

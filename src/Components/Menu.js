@@ -116,12 +116,12 @@ class PersistentDrawerLeft extends React.Component {
 
     const getMenuItems = () => {
         return <MenuList>
-          {menuItem("About Me",<AccountIcon/>, "about")}
-          {menuItem("Education",<SchoolIcon/>, "education")}
-          {menuItem("Experience",<TrendingUpIcon/>, "experience")}
-          {menuItem("Skills",<CodeIcon/>, "skills")}
-          {menuItem("Interests",<SchoolIcon/>, "interests")}
-          {menuItem("Books",<LocalLibraryIcon/>, "books")}
+          {menuItem("About Me",<AccountIcon style={{ color: pink[600] }}/>, "about")}
+          {menuItem("Education",<SchoolIcon style={{ color: pink[600] }}/>, "education")}
+          {menuItem("Experience",<TrendingUpIcon style={{ color: pink[600] }}/>, "experience")}
+          {menuItem("Skills",<CodeIcon style={{ color: pink[600] }}/>, "skills")}
+          {menuItem("Interests",<SchoolIcon style={{ color: pink[600] }}/>, "interests")}
+          {menuItem("Books",<LocalLibraryIcon style={{ color: pink[600] }}/>, "books")}
       </MenuList>;
       };
 
