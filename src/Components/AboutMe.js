@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import ImgMediaCard from './ImageCard'
 
 const styles = theme => ({
     root: {
@@ -15,20 +14,37 @@ const styles = theme => ({
       color: theme.palette.text.secondary,
     },
   });
+ 
+  function AboutMe(props) {
+    const { classes } = props;
+  
+  return(
+      <div>
+          <div className={classes.root}>
+            <Grid container spacing={24}>
+              <Grid item xs={12}>
+                <Paper className={classes.paper}>
+                <h1>About Me</h1>
+                </Paper>
+              </Grid>
+              <Grid item xs={12}>
+                <Paper className={classes.paper}>
+                  <p>Born and raised in Egypt</p>
+                </Paper>
+              </Grid>
+              <Grid item xs={12}>
+                <Paper className={classes.paper}>
+                <p>Started assembling computers when I was 14 years old</p>
+                </Paper>
+              </Grid>
+            </Grid>
+          </div>
+      </div>
+  )
+  };
 
-class AboutMe extends Component {
-
-    render(){
-        return(
-            <div>
-            <h1>About Me</h1>
-            <p>Born and raised in Egypt</p>
-            <p>Started assembling computers when I was 14 years old</p>
-            <ImgMediaCard/>
-            <ImgMediaCard/>
-            </div>
-        );
-    }
-}
+AboutMe.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
 
 export default  withStyles(styles)(AboutMe);

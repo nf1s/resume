@@ -118,7 +118,7 @@ class PersistentDrawerLeft extends React.Component {
           {menuItem("Experience",<TrendingUpIcon/>, "experience")}
           {menuItem("Skills",<CodeIcon/>, "skills")}
           {menuItem("Interests",<SchoolIcon/>, "interests")}
-          {menuItem("Favorite Tech Books",<LocalLibraryIcon/>, "books")}
+          {menuItem("Books",<LocalLibraryIcon/>, "books")}
       </MenuList>;
       };
 
