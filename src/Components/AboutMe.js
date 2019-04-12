@@ -6,7 +6,12 @@ class AboutMe extends Component {
 
     render(){
         return(
-            <h1>This is About Me Page</h1>
+            <div>
+            <h1>About Me</h1>
+            <p>Born and raised in Egypt</p>
+            <p>Started assembling computers when I was 14 years old</p>
+            <p></p>
+            </div>
         );
     }
 }
