@@ -17,8 +17,8 @@ const styles = theme => ({
     },
     bigAvatar: {
       margin: 10,
-      width: 60,
-      height: 60,
+      width: 150,
+      height: 150,
     },
   });
  
@@ -32,7 +32,7 @@ const styles = theme => ({
             <Grid container spacing={24}>
               <Grid item xs={12}>
                 <Paper className={classes.paper}>
-                <Avatar alt="Ahmed Nafies" src="../res/photo.png" className={classes.bigAvatar} />
+                <Avatar alt="Ahmed Nafies" src="https://raw.githubusercontent.com/ahmednafies/resume/master/src/res/photo.png" className={classes.bigAvatar} />
                 <h1>About Me</h1>
                 </Paper>
               </Grid>
