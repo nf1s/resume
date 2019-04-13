@@ -106,7 +106,7 @@ class PersistentDrawerLeft extends React.Component {
     const { open } = this.state;
 
     const menuItem = (name,icon,path) => {
-      return  <Link to={"/"+path}>
+      return  <Link to={"/"+path} style={{ textDecoration: 'none' }}>
                 <MenuItem>
                   <ListItemIcon>{icon}</ListItemIcon>
                     {name}

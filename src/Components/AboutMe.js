@@ -36,16 +36,6 @@ const styles = theme => ({
                 <h1>About Me</h1>
                 </Paper>
               </Grid>
-              <Grid item xs={12}>
-                <Paper className={classes.paper}>
-                  <p>Born and raised in Egypt</p>
-                </Paper>
-              </Grid>
-              <Grid item xs={12}>
-                <Paper className={classes.paper}>
-                <p>Started assembling computers when I was 14 years old</p>
-                </Paper>
-              </Grid>
             </Grid>
           </div>
       </div>

@@ -34,6 +34,18 @@ const events = [
     subheader: 'Jan 2017 - Dec 2018 (2 Years)',
     description: [ 'Full Stack Web Developer (AngularJs, Jquery, Python/Flask)' ],
     icon: <Avatar><WorkIcon  style={{ color: pink[700] }}/></Avatar>,
+  },
+  {
+    title: 'Erasmus Student Network',
+    subheader: 'Jan 2016 - Dec 2016 (1 Year)',
+    description: [ 'Web Developer' ],
+    icon: <Avatar><WorkIcon  style={{ color: pink[500] }}/></Avatar>,
+  },
+  {
+    title: 'YBN LTD',
+    subheader: 'Jan 2014 - Dec 2015 (2 Years)',
+    description: [ 'Full Stack Web Developer' ],
+    icon: <Avatar><WorkIcon  style={{ color: pink[300] }}/></Avatar>,
   }
 ];
 
