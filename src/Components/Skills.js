@@ -32,12 +32,14 @@ const rows = [
   createData('Flask', <ProgressBar finish={90}/>),
   createData('Django', <ProgressBar finish={90}/>),
   createData('Go', <ProgressBar finish={80}/>),
+  createData('MySQl', <ProgressBar finish={60}/>),
+  createData('Docker', <ProgressBar finish={75}/>),
+  createData('Kubernetes', <ProgressBar finish={65}/>),
 
   createData('AngularJS', <ProgressBar finish={75}/>),
   createData('React', <ProgressBar finish={40}/>),
   createData('JQuery', <ProgressBar finish={70}/>),
   createData('Javascript', <ProgressBar finish={55}/>),
-  createData('MySQl', <ProgressBar finish={60}/>),
   createData('CSS3', <ProgressBar finish={50}/>),
   createData('HTML5', <ProgressBar finish={90}/>),
 
