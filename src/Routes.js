@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import AboutMe from './Pages/AboutMe'
 import Education from './Pages/Education';
 import Experience from './Pages/Experience';
-import Interests from './Pages/Interests';
+import Impact from './Pages/Impact';
 import Books from './Pages/Books';
 import Skills from './Pages/Skills';
 import {Route} from "react-router-dom"
@@ -17,7 +17,7 @@ class Routes extends Component{
                 <Route path="/education" component={Education}/>
                 <Route path="/experience" component={Experience}/>
                 <Route path="/skills" component={Skills}/>
-                <Route path="/interests" component={Interests}/>
+                <Route path="/impact" component={Impact}/>
                 <Route path="/books" component={Books}/>
             </switch>
         );

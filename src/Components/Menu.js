@@ -120,7 +120,7 @@ class PersistentDrawerLeft extends React.Component {
           {menuItem("Education",<SchoolIcon style={{ color: pink[600] }}/>, "education")}
           {menuItem("Experience",<TrendingUpIcon style={{ color: pink[600] }}/>, "experience")}
           {menuItem("Skills",<CodeIcon style={{ color: pink[600] }}/>, "skills")}
-          {menuItem("Interests",<SchoolIcon style={{ color: pink[600] }}/>, "interests")}
+          {menuItem("Impact",<SchoolIcon style={{ color: pink[600] }}/>, "impact")}
           {menuItem("Books",<LocalLibraryIcon style={{ color: pink[600] }}/>, "books")}
       </MenuList>;
       };
