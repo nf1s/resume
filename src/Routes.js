@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import AboutMe from './Components/AboutMe'
-import Education from './Components/Education';
-import Experience from './Components/Experience';
-import Interests from './Components/Interests';
-import Books from './Components/Books';
-import Skills from './Components/Skills';
+import AboutMe from './Pages/AboutMe'
+import Education from './Pages/Education';
+import Experience from './Pages/Experience';
+import Interests from './Pages/Interests';
+import Books from './Pages/Books';
+import Skills from './Pages/Skills';
 import {Route} from "react-router-dom"
 
 class Routes extends Component{
