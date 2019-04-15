@@ -5,6 +5,7 @@ import { Timeline } from 'react-material-timeline';
 import { Avatar } from '@material-ui/core';
 import SchoolIcon from '@material-ui/icons/SchoolSharp';
 import pink from '@material-ui/core/colors/pink';
+import Zoom from '@material-ui/core/Zoom';
 
 const styles = theme => ({
     root: {
@@ -73,9 +74,12 @@ class Education extends Component {
                     <Grid item xs={8} className={ classes.grid}>
                         <h1>Education</h1>
                     </Grid>
+                    <Zoom in={true} style={{ transitionDelay: 40 }}>             
                     <Grid item xs={8}>
-                    <Timeline events={events}/>
+                        <Timeline events={events}/>
                     </Grid>
+                    </Zoom>
+
                 </Grid>
             </div>
         );

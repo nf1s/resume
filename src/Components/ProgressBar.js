@@ -24,7 +24,7 @@ constructor(props){
 }
 
   componentDidMount() {
-    this.timer = setInterval(this.progress, 200);
+    this.timer = setInterval(this.progress,70);
   }
 
   componentWillUnmount() {

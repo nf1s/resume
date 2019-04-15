@@ -72,7 +72,7 @@ class Books extends Component {
                     return      <Grid item xs={4}>
                                     <ImageCard book={book} index={index} />
                                 </Grid> 
-                    })}
+                        })}
                 </Grid>
             </div>        
         );

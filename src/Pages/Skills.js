@@ -9,6 +9,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import ProgressBar from '../Components/ProgressBar'
+import Zoom from '@material-ui/core/Zoom';
 
 const styles = theme => ({
   root: {
@@ -52,6 +53,7 @@ function Skills(props) {
     <div className={classes.root}>
         <Grid container spacing={24}>
             <Grid item xs={8}>
+              <Zoom in={true} style={{ transitionDelay: 20 }}>             
                 <Paper className={classes.root}>
                     <Table className={classes.table}>
                         <TableHead>
@@ -72,6 +74,7 @@ function Skills(props) {
                         </TableBody>
                     </Table>
                 </Paper>
+              </Zoom>
             </Grid>
         </Grid>
     </div>
