@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Avatar from '@material-ui/core/Avatar';
+import Typography from '@material-ui/core/Typography';
 
 
 const styles = theme => ({
@@ -36,14 +37,20 @@ const styles = theme => ({
                 </Grid>
                 <Grid item xs={12}>
                 <h1>About Me</h1>
-                <p>
+
+                <Typography paragraph>
                   I am full stack web developer with focus on backend, my favorite stack is Python/Django and React
                   (I started liking react recently actually). I know my way around HTML, CSS and Javascript and
-                  I have previous experience with AngularJS. I have had a long experience with Flask, as well had a some
+                  I have previous experience with AngularJS. 
+                  </Typography>
+
+                  <Typography paragraph>
+                  I have had a long experience with Flask, as well had a some
                   nice experience with Golang. I believe that my true power comes in developing Rest APIs. I'd like to think
                   of myself as a database agonstic as I have used different types of databases (MongoDb, MySQL, PostgreSQL, Neo4J).
                   Recently I started working with Firebase.
-                </p>{"\n"}
+                  </Typography>
+                  
                 </Grid>               
                 </Paper>
             </Grid>
