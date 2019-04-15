@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import ImageCard from '../Components/ImageCard'
-import Zoom from '@material-ui/core/Zoom';
 
 const styles = theme => ({
     root: {
@@ -71,12 +70,9 @@ class Books extends Component {
                     </Grid>
                     {books.map((book, index) => {
                     return      <Grid item xs={4}>
-                                    <Zoom in={true} style={{ transitionDelay: index * 30 }}>
-                                        <ImageCard book={book} index={index} />
-                                    </Zoom>
-                                </Grid>
-                    })
-                    }
+                                    <ImageCard book={book} index={index} />
+                                </Grid> 
+                    })}
                 </Grid>
             </div>        
         );
