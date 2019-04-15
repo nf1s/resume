@@ -5,7 +5,7 @@ import { Timeline } from 'react-material-timeline';
 import { Avatar } from '@material-ui/core';
 import WorkIcon from '@material-ui/icons/WorkSharp'
 import pink from '@material-ui/core/colors/pink';
-import Zoom from '@material-ui/core/Zoom';
+import Slide from '@material-ui/core/Slide';
 
 const styles = theme => ({
     root: {
@@ -60,11 +60,11 @@ class Experience extends Component{
                     <Grid item xs={8} className={classes.grid}>
                         <h1>Work Experience</h1>
                     </Grid>
-                    <Zoom in={true} style={{ transitionDelay: 40 }}>             
+                    <Slide direction="up" in={true} style={{ transitionDelay: 100 }} mountOnEnter unmountOnExit>
                     <Grid item xs={8}>
                     <Timeline events={events}/>
                     </Grid>
-                    </Zoom>
+                    </Slide>
                 </Grid>
             </div>
         );
