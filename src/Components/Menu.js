@@ -18,6 +18,7 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import AccountIcon from '@material-ui/icons/AccountCircleTwoTone';
 import SchoolIcon from '@material-ui/icons/SchoolTwoTone';
 import TrendingUpIcon from '@material-ui/icons/TrendingUpTwoTone';
+import TimelineIcon from '@material-ui/icons/TimelineTwoTone';
 import CodeIcon from '@material-ui/icons/CodeTwoTone';
 import LocalLibraryIcon from '@material-ui/icons/LocalLibraryTwoTone'
 import { Link } from 'react-router-dom';
@@ -118,9 +119,9 @@ class PersistentDrawerLeft extends React.Component {
         return <MenuList>
           {menuItem("About Me",<AccountIcon style={{ color: pink[600] }}/>, "about")}
           {menuItem("Education",<SchoolIcon style={{ color: pink[600] }}/>, "education")}
-          {menuItem("Experience",<TrendingUpIcon style={{ color: pink[600] }}/>, "experience")}
+          {menuItem("Experience",<TimelineIcon style={{ color: pink[600] }}/>, "experience")}
           {menuItem("Skills",<CodeIcon style={{ color: pink[600] }}/>, "skills")}
-          {menuItem("Impact",<SchoolIcon style={{ color: pink[600] }}/>, "impact")}
+          {menuItem("Impact",<TrendingUpIcon style={{ color: pink[600] }}/>, "impact")}
           {menuItem("Books",<LocalLibraryIcon style={{ color: pink[600] }}/>, "books")}
       </MenuList>;
       };

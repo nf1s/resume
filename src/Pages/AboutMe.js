@@ -32,10 +32,10 @@ const styles = theme => ({
       <div>
           <div className={classes.root}>
             <Grid container spacing={24}>
-            <Zoom in={true} style={{ transitionDelay: 30 }}>
+            <Zoom in={true} style={{ transitionDelay: 40 }}>
                 <Paper className={classes.paper}>
                 <Grid item xs={12}>
-                <Zoom in={true} style={{ transitionDelay: 100 }}>
+                <Zoom in={true} style={{ transitionDelay: 150 }}>
                 <Avatar alt="Ahmed Nafies" src="https://raw.githubusercontent.com/ahmednafies/resume/master/src/res/photo.png" className={classes.bigAvatar} />
                 </Zoom>
                 </Grid>

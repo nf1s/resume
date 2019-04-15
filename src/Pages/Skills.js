@@ -36,7 +36,6 @@ const rows = [
   createData('MySQl', <ProgressBar finish={60}/>),
   createData('Docker', <ProgressBar finish={75}/>),
   createData('Kubernetes', <ProgressBar finish={65}/>),
-
   createData('AngularJS', <ProgressBar finish={75}/>),
   createData('React', <ProgressBar finish={40}/>),
   createData('JQuery', <ProgressBar finish={70}/>),
