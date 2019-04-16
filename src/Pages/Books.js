@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import ImageCard from '../Components/ImageCard'
+import Slide from '@material-ui/core/Slide';
 
 const styles = theme => ({
     root: {
@@ -55,6 +56,13 @@ const styles = theme => ({
         stars:5,
         url:"https://www.goodreads.com/book/show/58128.Head_First_Design_Patterns",
     },
+    {
+        title: 'Building Microservices',
+        subheader:'by Sam Newman',
+        cover:'https://images.gr-assets.com/books/1403186979l/22512931.jpg',
+        stars:4.5,
+        url:"https://www.goodreads.com/book/show/22512931-building-microservices",
+    },
   ]
 
 class Books extends Component {
@@ -69,11 +77,15 @@ class Books extends Component {
                         <h1>My Favorite Books</h1>
                     </Grid>
                     {books.map((book, index) => {
-                    return      <Grid item xs={4}>
+                    return <Slide direction="up" in={true} 
+                            style={{ transitionDelay: index*50 }} 
+                            mountOnEnter unmountOnExit>
+                                <Grid item xs={4}>
                                     <ImageCard book={book} index={index} />
                                 </Grid> 
+                            </Slide>
                         })}
-                </Grid>
+                    </Grid>
             </div>        
         );
     }

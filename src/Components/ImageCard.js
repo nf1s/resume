@@ -9,7 +9,6 @@ import Avatar from '@material-ui/core/Avatar';
 import pink from '@material-ui/core/colors/pink';
 import { FaBook } from 'react-icons/fa';
 import Rating from 'material-ui-rating/lib/components/Rating';
-import Zoom from '@material-ui/core/Zoom';
 
 
 const styles = theme => ({
@@ -46,10 +45,9 @@ class ImageCard extends React.Component {
   };
 
   render() {
-    const { classes, book, index } = this.props;
+    const { classes, book } = this.props;
 
     return (
-      <Zoom in={true} style={{ transitionDelay: index * 30 }}>
       <Card className={classes.card}>
         <CardHeader
           avatar={
@@ -71,7 +69,6 @@ class ImageCard extends React.Component {
         <Rating value={book.stars} max={5}  readOnly/>
         </CardContent>
       </Card>
-      </Zoom>
     );
   }
 }
