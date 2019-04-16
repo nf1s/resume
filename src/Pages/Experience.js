@@ -57,11 +57,11 @@ class Experience extends Component{
         return(
             <div className={classes.root}>
                 <Grid container spacing={24}>
-                    <Grid item xs={8} className={classes.grid}>
+                    <Grid item xs={12} sm={12} md={12} lg={8} className={classes.grid}>
                         <h1>Work Experience</h1>
                     </Grid>
                     <Slide direction="up" in={true} style={{ transitionDelay: 100 }} mountOnEnter unmountOnExit>
-                    <Grid item xs={8}>
+                    <Grid item xs={12} sm={12} md={12} lg={8}>
                     <Timeline events={events}/>
                     </Grid>
                     </Slide>

@@ -11,7 +11,7 @@ class Routes extends Component{
 
     render(){
         return(
-            <switch>
+            <span>
                 <Route exact path="/" component={AboutMe} />          
                 <Route path="/about" component={AboutMe}/>
                 <Route path="/education" component={Education}/>
@@ -19,7 +19,7 @@ class Routes extends Component{
                 <Route path="/skills" component={Skills}/>
                 <Route path="/impact" component={Impact}/>
                 <Route path="/books" component={Books}/>
-            </switch>
+            </span>
         );
     }
 }
