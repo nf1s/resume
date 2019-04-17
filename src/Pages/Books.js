@@ -77,7 +77,7 @@ class Books extends Component {
                         <h1>My Favorite Books</h1>
                     </Grid>
                     {books.map((book, index) => {
-                    return <Slide direction="up" in={true} 
+                    return <Slide direction="left" in={true} 
                             style={{ transitionDelay: index*50 }} 
                             mountOnEnter unmountOnExit>
                                 <Grid item xs={4}>
