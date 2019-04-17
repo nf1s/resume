@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import ImageCard from '../Components/ImageCard'
@@ -65,10 +65,9 @@ const styles = theme => ({
     },
   ]
 
-class Books extends Component {
+function Books (props) {
 
-    render(){
-        const { classes } = this.props;
+        const { classes } = props;
 
         return(
             <div className={classes.root}>
@@ -90,7 +89,6 @@ class Books extends Component {
                     </Grid>
             </div>        
         );
-    }
 }
 
 export default withStyles(styles)(Books);

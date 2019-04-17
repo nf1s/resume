@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Graph from '../Components/Graph';
@@ -61,10 +61,9 @@ const styles = theme => ({
     },
   ];
 
-class Impact extends Component {
+function Impact (props) {
     
-    render(){
-        const { classes } = this.props;
+        const { classes } = props;
 
         return(
             <div>
@@ -83,7 +82,6 @@ class Impact extends Component {
             </div>
             </div>
         );
-    }
 }
 
 export default withStyles(styles) (Impact)

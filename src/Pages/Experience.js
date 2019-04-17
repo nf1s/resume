@@ -1,4 +1,4 @@
-import React , {Component} from 'react';
+import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { Timeline } from 'react-material-timeline';
@@ -50,24 +50,22 @@ const events = [
   }
 ];
 
-class Experience extends Component{
-      render(){
-        const { classes } = this.props;
-
-        return(
-            <div className={classes.root}>
-                <Grid container spacing={24}>
-                    <Grid item xs={12} sm={12} md={12} lg={8} className={classes.grid}>
-                        <h1>Work Experience</h1>
-                    </Grid>
-                    <Slide direction="up" in={true} style={{ transitionDelay: 100 }} mountOnEnter unmountOnExit>
-                    <Grid item xs={12} sm={12} md={12} lg={8}>
-                    <Timeline events={events}/>
-                    </Grid>
-                    </Slide>
-                </Grid>
-            </div>
+function Experience (props){
+      const { classes } = props;
+      
+      return(
+          <div className={classes.root}>
+              <Grid container spacing={24}>
+                  <Grid item xs={12} sm={12} md={12} lg={8} className={classes.grid}>
+                      <h1>Work Experience</h1>
+                  </Grid>
+                  <Slide direction="up" in={true} style={{ transitionDelay: 100 }} mountOnEnter unmountOnExit>
+                  <Grid item xs={12} sm={12} md={12} lg={8}>
+                  <Timeline events={events}/>
+                  </Grid>
+                  </Slide>
+              </Grid>
+          </div>
         );
-    }
   }
 export default withStyles(styles)(Experience);
