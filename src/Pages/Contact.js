@@ -9,7 +9,12 @@ import Typography from '@material-ui/core/Typography';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
 import Divider from '@material-ui/core/Divider';
+import Avatar from '@material-ui/core/Avatar';
+import ContactEmailIcon from '@material-ui/icons/ContactMailSharp'
+import pink from '@material-ui/core/colors/pink';
+import { FaGithubSquare , FaLinkedin } from 'react-icons/fa'
 
 const styles = {
   card: {
@@ -20,12 +25,26 @@ const styles = {
   },
 };
 
-const listItems = [
-    {
-        
-    },
+const listItem = (text, icon, ) => {
+    return <span>
+          <Divider />
+          <ListItem>
+          <ListItemIcon>
+            <Avatar>{icon}</Avatar>
+          </ListItemIcon>
+            <ListItemText primary={text} />
+          </ListItem>
+          </span>
+};
 
-];
+
+const listItems = () => { 
+  return <List>
+          {listItem("ahmed.nafies@gmail.com", <ContactEmailIcon style={{ color: pink[900] }} />)}
+          {listItem("https://github.com/ahmednafies", <FaGithubSquare style={{ color: pink[900] }} />)}
+          {listItem("https://www.linkedin.com/in/ahmednafies", <FaLinkedin style={{ color: pink[900] }} />)}
+        </List>
+};
 
 
 function Contact(props) {
@@ -35,27 +54,17 @@ function Contact(props) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
+          image=""
+          title="Ahmed Nafies"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             Ahmed Nafies
           </Typography>
           <Typography component="p">
-
+            {listItems()}
           </Typography>
         </CardContent>
-        <List component="nav">
-        <Divider />
-        <ListItem>
-          <ListItemText primary="Inbox" />
-        </ListItem>
-        <Divider />
-        <ListItem>
-          <ListItemText primary="Drafts" />
-        </ListItem>
-      </List>
       <Divider />
       </CardActionArea>
     </Card>

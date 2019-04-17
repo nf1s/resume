@@ -23,6 +23,7 @@ import CodeIcon from '@material-ui/icons/CodeTwoTone';
 import LocalLibraryIcon from '@material-ui/icons/LocalLibraryTwoTone'
 import { Link } from 'react-router-dom';
 import pink from '@material-ui/core/colors/pink';
+import ContactsIcon from '@material-ui/icons/ContactsTwoTone'
 
 const drawerWidth = 240;
 
@@ -123,7 +124,7 @@ class PersistentDrawerLeft extends React.Component {
           {menuItem("Skills",<CodeIcon style={{ color: pink[600] }}/>, "skills")}
           {menuItem("Impact",<TrendingUpIcon style={{ color: pink[600] }}/>, "impact")}
           {menuItem("Books",<LocalLibraryIcon style={{ color: pink[600] }}/>, "books")}
-          {menuItem("Contact",<LocalLibraryIcon style={{ color: pink[600] }}/>, "contact")}
+          {menuItem("Contact",<ContactsIcon style={{ color: pink[600] }}/>, "contact")}
 
       </MenuList>;
       };
