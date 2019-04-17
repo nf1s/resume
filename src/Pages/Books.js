@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
 import ImageCard from '../Components/ImageCard'
 import Slide from '@material-ui/core/Slide';
 
@@ -74,10 +75,12 @@ class Books extends Component {
             <div className={classes.root}>
                 <Grid container spacing={24}>
                     <Grid item xs={12} className={ classes.grid}>
+                    <div>
                         <h1>My Favorite Books</h1>
+                    </div>
                     </Grid>
                     {books.map((book, index) => {
-                    return <Slide direction="left" in={true} 
+                    return <Slide direction="left" in={true} key={index}
                             style={{ transitionDelay: index*50 }} 
                             mountOnEnter unmountOnExit>
                                 <Grid item xs={4}>

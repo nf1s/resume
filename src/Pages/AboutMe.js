@@ -40,15 +40,15 @@ const styles = theme => ({
                 </Zoom>
                 </Grid>
                 <Grid item xs={12}>
-                <Typography paragraph>
+                <div>
                   I am an IT veteran with focus on web development,
                   Java was my old friend but Python and I became best friends serveral years ago.
                   I recently started hanging out with Go, and Go is AWESOME.
-                  </Typography>
-                  <Typography paragraph>
+                  </div>
+                  <div>
                   My favorite stack is Python/Django and React.
                   But I have the most experience with Python/Flask and AngularJS.
-                  </Typography>
+                  </div>
                 </Grid>               
                 </Paper>
                 </Zoom>

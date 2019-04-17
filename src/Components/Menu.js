@@ -177,9 +177,9 @@ class PersistentDrawerLeft extends React.Component {
           })}
         >
           <div className={classes.drawerHeader} />
-          <Typography paragraph>
+          <div>
             {children}
-          </Typography>
+          </div>
         </main>
 
       </div>
