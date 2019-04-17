@@ -40,17 +40,14 @@ const styles = theme => ({
                 </Zoom>
                 </Grid>
                 <Grid item xs={12}>
-                <h1>About Me</h1>
                 <Typography paragraph>
-                  I am full stack web developer with focus on backend, my favorite stack is Python/Django and React
-                  (I started liking react recently actually). I know my way around HTML, CSS and Javascript and
-                  I have previous experience with AngularJS. 
+                  I am an IT veteran with focus on web development,
+                  Java was my old friend but Python and I became best friends serveral years ago.
+                  I recently started hanging out with Go, and Go is AWESOME.
                   </Typography>
                   <Typography paragraph>
-                  I have had a long experience with Flask, as well had a some
-                  nice experience with Golang. I believe that my true power comes in developing Rest APIs. I'd like to think
-                  of myself as a database agonstic as I have used different types of databases (MongoDb, MySQL, PostgreSQL, Neo4J).
-                  Recently I started working with Firebase.
+                  My favorite stack is Python/Django and React.
+                  But I have the most experience with Python/Flask and AngularJS.
                   </Typography>
                 </Grid>               
                 </Paper>
