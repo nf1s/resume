@@ -59,7 +59,6 @@ const styles = theme => ({
         {name: 'Dec', students: 2000},
       ]
     },
-
   ];
 
 class Impact extends Component {
@@ -73,7 +72,8 @@ class Impact extends Component {
             <div className={classes.root}>
                 <Grid container spacing={24}>
                 {impacts.map((impact, index) => {
-                  return <Slide direction="left" in={true} style={{ transitionDelay: index*50 }} mountOnEnter unmountOnExit>
+                  return <Slide direction="left" in={true} key={index}
+                  style={{ transitionDelay: index*50 }} mountOnEnter unmountOnExit>
                       <Grid item xs={8} className={ classes.grid}>
                           <Graph impact={impact}/>
                       </Grid>
