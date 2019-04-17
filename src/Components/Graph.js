@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
@@ -22,9 +22,8 @@ const styles = theme => ({
   }
 });
 
-class Graph extends Component{
-	render () {
-    const { classes, impact } = this.props
+function Graph (props){
+    const { classes, impact } = props
 
   	return (
         <div className={classes.root}>
@@ -52,7 +51,6 @@ class Graph extends Component{
       </Grid>
     </div>
     );
-  }
 }
 
 export default withStyles(styles)(Graph)

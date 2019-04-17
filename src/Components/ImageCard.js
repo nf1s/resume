@@ -10,7 +10,6 @@ import pink from '@material-ui/core/colors/pink';
 import { FaBook } from 'react-icons/fa';
 import Rating from 'material-ui-rating/lib/components/Rating';
 
-
 const styles = theme => ({
   card: {
     maxWidth: 400,
@@ -37,15 +36,10 @@ const styles = theme => ({
   },
 });
 
-class ImageCard extends React.Component {
-  state = { expanded: false };
 
-  handleExpandClick = () => {
-    this.setState(state => ({ expanded: !state.expanded }));
-  };
 
-  render() {
-    const { classes, book } = this.props;
+function ImageCard (props) {
+    const { classes, book } = props;
 
     return (
       <Card className={classes.card}>
@@ -70,7 +64,6 @@ class ImageCard extends React.Component {
         </CardContent>
       </Card>
     );
-  }
 }
 
 ImageCard.propTypes = {
