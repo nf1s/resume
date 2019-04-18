@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AboutMe from './Pages/AboutMe'
+import AboutMe from './Pages/AboutMe/AboutMe'
 import Education from './Pages/Education';
 import Experience from './Pages/Experience';
 import Impact from './Pages/Impact';
