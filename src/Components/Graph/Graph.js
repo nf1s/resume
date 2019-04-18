@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
 import pink from '@material-ui/core/colors/pink';
 
-import './Style/Graph.css'
+import './Graph.css'
 
 const styles = theme => ({
   root: {
