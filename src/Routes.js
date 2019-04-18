@@ -3,7 +3,7 @@ import AboutMe from './Pages/AboutMe'
 import Education from './Pages/Education';
 import Experience from './Pages/Experience';
 import Impact from './Pages/Impact';
-import Books from './Pages/Books/Books';
+import Books from './Pages/Books';
 import Contact from './Pages/Contact';
 import Skills from './Pages/Skills';
 import { Route } from "react-router-dom"
