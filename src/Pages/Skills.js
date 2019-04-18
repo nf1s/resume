@@ -8,7 +8,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import ProgressBar from '../Components/ProgressBar'
+import ProgressBar from '../Components/ProgressBar/ProgressBar'
 import Zoom from '@material-ui/core/Zoom';
 
 const styles = theme => ({
