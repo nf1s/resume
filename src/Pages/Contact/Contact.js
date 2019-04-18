@@ -14,7 +14,7 @@ import Divider from '@material-ui/core/Divider';
 import Avatar from '@material-ui/core/Avatar';
 import ContactEmailIcon from '@material-ui/icons/ContactMailSharp'
 import pink from '@material-ui/core/colors/pink';
-import { FaGithubSquare , FaLinkedin } from 'react-icons/fa'
+import { FaGithubSquare, FaLinkedin } from 'react-icons/fa'
 
 const styles = {
   card: {
@@ -26,24 +26,24 @@ const styles = {
 };
 
 const listItem = (text, icon, ) => {
-    return <span>
-          <Divider />
-          <ListItem>
-          <ListItemIcon>
-            <Avatar>{icon}</Avatar>
-          </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-          </span>
+  return <span>
+    <Divider />
+    <ListItem>
+      <ListItemIcon>
+        <Avatar>{icon}</Avatar>
+      </ListItemIcon>
+      <ListItemText primary={text} />
+    </ListItem>
+  </span>
 };
 
 
-const listItems = () => { 
+const listItems = () => {
   return <List>
-          {listItem("ahmed.nafies@gmail.com", <ContactEmailIcon style={{ color: pink[900] }} />)}
-          {listItem("https://github.com/ahmednafies", <FaGithubSquare style={{ color: pink[900] }} />)}
-          {listItem("https://www.linkedin.com/in/ahmednafies", <FaLinkedin style={{ color: pink[900] }} />)}
-        </List>
+    {listItem("ahmed.nafies@gmail.com", <ContactEmailIcon style={{ color: pink[900] }} />)}
+    {listItem("https://github.com/ahmednafies", <FaGithubSquare style={{ color: pink[900] }} />)}
+    {listItem("https://www.linkedin.com/in/ahmednafies", <FaLinkedin style={{ color: pink[900] }} />)}
+  </List>
 };
 
 
@@ -61,11 +61,9 @@ function Contact(props) {
           <Typography gutterBottom variant="h5" component="h2">
             Ahmed Nafies
           </Typography>
-          <Typography component="p">
-            {listItems()}
-          </Typography>
+          {listItems()}
         </CardContent>
-      <Divider />
+        <Divider />
       </CardActionArea>
     </Card>
   );
