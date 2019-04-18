@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
@@ -90,46 +90,44 @@ const styles = theme => ({
     },
   });
  
-class PersistentDrawerLeft extends React.Component {
-  state = {
-    open: false,
+
+  const menuItem = (name,icon,path) => {
+    return  <Link to={"/"+path} style={{ textDecoration: 'none' }}>
+              <MenuItem>
+                <ListItemIcon>{icon}</ListItemIcon>
+                  {name}
+                </MenuItem>
+            </Link>
+  }
+
+  const getMenuItems = () => {
+      return <MenuList>
+        {menuItem("About Me",<AccountIcon style={{ color: pink[600] }}/>, "about")}
+        {menuItem("Education",<SchoolIcon style={{ color: pink[600] }}/>, "education")}
+        {menuItem("Experience",<TimelineIcon style={{ color: pink[600] }}/>, "experience")}
+        {menuItem("Skills",<CodeIcon style={{ color: pink[600] }}/>, "skills")}
+        {menuItem("Impact",<TrendingUpIcon style={{ color: pink[600] }}/>, "impact")}
+        {menuItem("Books",<LocalLibraryIcon style={{ color: pink[600] }}/>, "books")}
+        {menuItem("Contact",<ContactsIcon style={{ color: pink[600] }}/>, "contact")}
+
+    </MenuList>;
+    };
+
+function PersistentDrawerLeft (props) {
+
+  const [open, setOpen] = useState(false);
+
+  const handleDrawerOpen = () => {
+    setOpen(true);
   };
 
-  handleDrawerOpen = () => {
-    this.setState({ open: true });
+  const handleDrawerClose = () => {
+    setOpen(false);
   };
 
-  handleDrawerClose = () => {
-    this.setState({ open: false });
-  };
+  const { classes, theme, children } = props;
 
-  render() {
-    const { classes, theme, children } = this.props;
-    const { open } = this.state;
-
-    const menuItem = (name,icon,path) => {
-      return  <Link to={"/"+path} style={{ textDecoration: 'none' }}>
-                <MenuItem>
-                  <ListItemIcon>{icon}</ListItemIcon>
-                    {name}
-                  </MenuItem>
-              </Link>
-    }
-
-    const getMenuItems = () => {
-        return <MenuList>
-          {menuItem("About Me",<AccountIcon style={{ color: pink[600] }}/>, "about")}
-          {menuItem("Education",<SchoolIcon style={{ color: pink[600] }}/>, "education")}
-          {menuItem("Experience",<TimelineIcon style={{ color: pink[600] }}/>, "experience")}
-          {menuItem("Skills",<CodeIcon style={{ color: pink[600] }}/>, "skills")}
-          {menuItem("Impact",<TrendingUpIcon style={{ color: pink[600] }}/>, "impact")}
-          {menuItem("Books",<LocalLibraryIcon style={{ color: pink[600] }}/>, "books")}
-          {menuItem("Contact",<ContactsIcon style={{ color: pink[600] }}/>, "contact")}
-
-      </MenuList>;
-      };
-
-    return (
+  return (
       <div className={classes.root}>
         <CssBaseline />
         <AppBar
@@ -144,7 +142,7 @@ class PersistentDrawerLeft extends React.Component {
             <IconButton
               color="inherit"
               aria-label="Open drawer"
-              onClick={this.handleDrawerOpen}
+              onClick={handleDrawerOpen}
               className={classNames(classes.menuButton, open && classes.hide)}
             >
               <MenuIcon />
@@ -164,7 +162,7 @@ class PersistentDrawerLeft extends React.Component {
           }}
         >
           <div className={classes.drawerHeader}>
-            <IconButton onClick={this.handleDrawerClose}>
+            <IconButton onClick={handleDrawerClose}>
               {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
             </IconButton>
           </div>
@@ -185,7 +183,6 @@ class PersistentDrawerLeft extends React.Component {
 
       </div>
     );
-  }
 }
 
 PersistentDrawerLeft.propTypes = {
