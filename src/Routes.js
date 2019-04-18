@@ -9,7 +9,6 @@ import Skills from './Pages/Skills';
 import { Route } from "react-router-dom"
 
 class Routes extends Component {
-
     render() {
         return (
             <span>
@@ -21,10 +20,8 @@ class Routes extends Component {
                 <Route path="/impact" component={Impact} />
                 <Route path="/books" component={Books} />
                 <Route path="/contact" component={Contact} />
-
             </span>
         );
     }
 }
-
 export default Routes
