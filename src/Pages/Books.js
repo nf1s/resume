@@ -1,7 +1,7 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import ImageCard from '../Components/ImageCard'
+import ImageCard from '../Components/ImageCard/ImageCard'
 import Slide from '@material-ui/core/Slide';
 
 const styles = theme => ({

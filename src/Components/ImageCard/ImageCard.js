@@ -37,7 +37,6 @@ const styles = theme => ({
 });
 
 
-
 function ImageCard (props) {
     const { classes, book } = props;
 
