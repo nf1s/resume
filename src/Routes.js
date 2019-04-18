@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import AboutMe from './Pages/AboutMe/AboutMe'
-import Education from './Pages/Education';
+import Education from './Pages/Education/Education';
 import Experience from './Pages/Experience';
 import Impact from './Pages/Impact';
 import Books from './Pages/Books/Books';
