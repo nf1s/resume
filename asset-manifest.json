@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.fbc8bac3.chunk.css",
-    "main.js": "/resume/static/js/main.0f462a3c.chunk.js",
-    "main.js.map": "/resume/static/js/main.0f462a3c.chunk.js.map",
-    "runtime~main.js": "/resume/static/js/runtime~main.30522d0f.js",
-    "runtime~main.js.map": "/resume/static/js/runtime~main.30522d0f.js.map",
-    "static/css/2.e180e90e.chunk.css": "/resume/static/css/2.e180e90e.chunk.css",
-    "static/js/2.9575e1f8.chunk.js": "/resume/static/js/2.9575e1f8.chunk.js",
-    "static/js/2.9575e1f8.chunk.js.map": "/resume/static/js/2.9575e1f8.chunk.js.map",
-    "index.html": "/resume/index.html",
-    "precache-manifest.7d93150b80a5a8922419ddaf76cd1e1a.js": "/resume/precache-manifest.7d93150b80a5a8922419ddaf76cd1e1a.js",
-    "service-worker.js": "/resume/service-worker.js",
-    "static/css/2.e180e90e.chunk.css.map": "/resume/static/css/2.e180e90e.chunk.css.map",
-    "static/css/main.fbc8bac3.chunk.css.map": "/resume/static/css/main.fbc8bac3.chunk.css.map",
-    "static/media/index.css": "/resume/static/media/roboto-latin-900italic.bc833e72.woff"
+    "main.css": "/static/css/main.fbc8bac3.chunk.css",
+    "main.js": "/static/js/main.8c93aa1d.chunk.js",
+    "main.js.map": "/static/js/main.8c93aa1d.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.94155858.chunk.css": "/static/css/2.94155858.chunk.css",
+    "static/js/2.91f26988.chunk.js": "/static/js/2.91f26988.chunk.js",
+    "static/js/2.91f26988.chunk.js.map": "/static/js/2.91f26988.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.4acdc52a2dd27f022e32adad9b6a77ba.js": "/precache-manifest.4acdc52a2dd27f022e32adad9b6a77ba.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.94155858.chunk.css.map": "/static/css/2.94155858.chunk.css.map",
+    "static/css/main.fbc8bac3.chunk.css.map": "/static/css/main.fbc8bac3.chunk.css.map",
+    "static/media/index.css": "/static/media/roboto-latin-900italic.bc833e72.woff"
   }
 }
