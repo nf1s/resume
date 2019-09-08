@@ -1,25 +1,25 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
-import ProgressBar from '../../Components/ProgressBar/ProgressBar'
-import Zoom from '@material-ui/core/Zoom';
+import React from "react";
+import PropTypes from "prop-types";
+import { withStyles } from "@material-ui/core/styles";
+import Table from "@material-ui/core/Table";
+import TableBody from "@material-ui/core/TableBody";
+import TableCell from "@material-ui/core/TableCell";
+import TableHead from "@material-ui/core/TableHead";
+import TableRow from "@material-ui/core/TableRow";
+import Paper from "@material-ui/core/Paper";
+import Grid from "@material-ui/core/Grid";
+import ProgressBar from "../../Components/ProgressBar/ProgressBar";
+import Zoom from "@material-ui/core/Zoom";
 
 const styles = theme => ({
   root: {
-    width: '100%',
+    width: "100%",
     marginTop: theme.spacing.unit * 3,
-    overflowX: 'auto',
+    overflowX: "auto"
   },
   table: {
-    minWidth: 10,
-  },
+    minWidth: 10
+  }
 });
 
 let id = 0;
@@ -29,20 +29,17 @@ function createData(name, strength) {
 }
 
 const rows = [
-  createData('Python', <ProgressBar finish={90} />),
-  createData('Flask', <ProgressBar finish={90} />),
-  createData('Django', <ProgressBar finish={90} />),
-  createData('Go', <ProgressBar finish={80} />),
-  createData('MySQl', <ProgressBar finish={60} />),
-  createData('Docker', <ProgressBar finish={75} />),
-  createData('Kubernetes', <ProgressBar finish={65} />),
-  createData('AngularJS', <ProgressBar finish={75} />),
-  createData('React', <ProgressBar finish={40} />),
-  createData('JQuery', <ProgressBar finish={70} />),
-  createData('Javascript', <ProgressBar finish={55} />),
-  createData('CSS3', <ProgressBar finish={50} />),
-  createData('HTML5', <ProgressBar finish={90} />),
-
+  createData("Python", <ProgressBar finish={95} />),
+  createData("Django", <ProgressBar finish={90} />),
+  createData("Flask", <ProgressBar finish={85} />),
+  createData("Go", <ProgressBar finish={70} />),
+  createData("Docker", <ProgressBar finish={80} />),
+  createData("React", <ProgressBar finish={75} />),
+  createData("AngularJS", <ProgressBar finish={60} />),
+  createData("JQuery", <ProgressBar finish={50} />),
+  createData("Javascript", <ProgressBar finish={55} />),
+  createData("CSS3", <ProgressBar finish={50} />),
+  createData("HTML5", <ProgressBar finish={90} />)
 ];
 
 function Skills(props) {
@@ -81,8 +78,7 @@ function Skills(props) {
 }
 
 Skills.propTypes = {
-  classes: PropTypes.object.isRequired,
+  classes: PropTypes.object.isRequired
 };
 
 export default withStyles(styles)(Skills);
-
