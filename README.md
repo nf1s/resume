@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Built with React and MaterialUI
+## Built with React, MaterialUI and Firebase
 
 check the life version of this code here:
 https://resume-1b4f0.firebaseapp.com/
