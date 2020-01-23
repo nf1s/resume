@@ -26,8 +26,8 @@ const styles = theme => ({
 const events = [
   {
     title: "Hem Design Studio",
-    subheader: "Dec 2018 - Now (-1 year)",
-    description: ["Backend Tech Lead (Python/Django, Go)"],
+    subheader: "Dec 2018 - March 2019 (1 year, 4 months)",
+    description: ["Backend Tech Lead (Python/Django, Go, React)"],
     icon: (
       <Avatar>
         <WorkIcon style={{ color: pink[900] }} />
@@ -37,7 +37,7 @@ const events = [
   {
     title: "Swedbank",
     subheader: "Jan 2017 - Dec 2018 (2 Years)",
-    description: ["Software Developer (Python/Flask, AngularJs, Jquery)"],
+    description: ["Software Developer (Python/Flask, AngularJs)"],
     icon: (
       <Avatar>
         <WorkIcon style={{ color: pink[800] }} />
@@ -45,9 +45,19 @@ const events = [
     )
   },
   {
+    title: "YBN LTD",
+    subheader: "Feb 2016 - Jan 2017 (1 Year)",
+    description: ["Software Developer Remote (Python/Django)"],
+    icon: (
+      <Avatar>
+        <WorkIcon style={{ color: pink[400] }} />
+      </Avatar>
+    )
+  },
+  {
     title: "Erasmus Student Network",
-    subheader: "Jan 2016 - Dec 2016 (1 Year)",
-    description: ["Software Developer (Python/Django, Jquery)"],
+    subheader: "Mar 2015 - Feb 2016 (1 Year)",
+    description: ["Software Developer (Python/Django)"],
     icon: (
       <Avatar>
         <WorkIcon style={{ color: pink[700] }} />
@@ -56,7 +66,7 @@ const events = [
   },
   {
     title: "Skype",
-    subheader: "Oct 2016 - Dec 2016 (3 months)",
+    subheader: "Jan 2015 - Mar 2015 (3 months)",
     description: ["Community Moderator"],
     icon: (
       <Avatar>
@@ -66,8 +76,8 @@ const events = [
   },
   {
     title: "Praxis Network",
-    subheader: "Jul 2015 - Sep 2015 (3 months)",
-    description: ["Web developer Intern (PHP/Symphony)"],
+    subheader: "Oct 2014 - Jan 2015 (4 months)",
+    description: ["Software Developer Intern (PHP/Symphony)"],
     icon: (
       <Avatar>
         <WorkIcon style={{ color: pink[500] }} />
@@ -75,18 +85,8 @@ const events = [
     )
   },
   {
-    title: "YBN LTD",
-    subheader: "Jan 2014 - Jan 2015 (1 Year)",
-    description: ["Web Developer Consultant (Python/Django, Java/Spring)"],
-    icon: (
-      <Avatar>
-        <WorkIcon style={{ color: pink[400] }} />
-      </Avatar>
-    )
-  },
-  {
     title: "British University in Egypt",
-    subheader: "Jan 2014 - Jan 2015 (1 Year)",
+    subheader: "Sep 2014 - Sep 2015 (1 Year)",
     description: ["Teaching Assistant (c/c++, Java)"],
     icon: (
       <Avatar>

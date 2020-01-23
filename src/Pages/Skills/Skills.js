@@ -31,15 +31,13 @@ function createData(name, strength) {
 const rows = [
   createData("Python", <ProgressBar finish={95} />),
   createData("Django", <ProgressBar finish={90} />),
-  createData("Flask", <ProgressBar finish={85} />),
-  createData("Go", <ProgressBar finish={70} />),
+  createData("Fast API", <ProgressBar finish={85} />),
+  createData("Flask", <ProgressBar finish={75} />),
   createData("Docker", <ProgressBar finish={80} />),
-  createData("React", <ProgressBar finish={75} />),
-  createData("AngularJS", <ProgressBar finish={60} />),
-  createData("JQuery", <ProgressBar finish={50} />),
-  createData("Javascript", <ProgressBar finish={55} />),
-  createData("CSS3", <ProgressBar finish={50} />),
-  createData("HTML5", <ProgressBar finish={90} />)
+  createData("Go", <ProgressBar finish={70} />),
+  createData("React", <ProgressBar finish={65} />),
+  createData("ES6", <ProgressBar finish={55} />),
+  createData("AngularJS", <ProgressBar finish={50} />),
 ];
 
 function Skills(props) {
@@ -54,7 +52,7 @@ function Skills(props) {
               <Table className={classes.table}>
                 <TableHead>
                   <TableRow>
-                    <TableCell>Skill</TableCell>
+                    <TableCell>Skills</TableCell>
                     <TableCell align="right">Strength</TableCell>
                   </TableRow>
                 </TableHead>

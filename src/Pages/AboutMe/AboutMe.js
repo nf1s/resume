@@ -42,7 +42,7 @@ function AboutMe(props) {
               </Grid>
               <Grid item xs={12}>
                 <div>
-                  I am an IT veteran with focus on web development, Java was my
+                  I am an IT veteran with focus on software development for web applications, Python was my
                   old friend but Python and I became best friends several years
                   ago. I recently started hanging out with Go, and Go is
                   AWESOME.
