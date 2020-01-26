@@ -45,18 +45,8 @@ const events = [
     )
   },
   {
-    title: "YBN LTD",
-    subheader: "Feb 2016 - Jan 2017 (1 Year)",
-    description: ["Software Developer Remote (Python/Django)"],
-    icon: (
-      <Avatar>
-        <WorkIcon style={{ color: pink[400] }} />
-      </Avatar>
-    )
-  },
-  {
     title: "Erasmus Student Network",
-    subheader: "Mar 2015 - Feb 2016 (1 Year)",
+    subheader: "Feb 2016 - Jan 2017 (1 Year)",
     description: ["Software Developer (Python/Django)"],
     icon: (
       <Avatar>
@@ -65,8 +55,18 @@ const events = [
     )
   },
   {
+    title: "YBN LTD",
+    subheader: "Jan 2015 - Feb 2016 (1 Year, 2 Months)",
+    description: ["Software Developer Remote (Python/Django)"],
+    icon: (
+      <Avatar>
+        <WorkIcon style={{ color: pink[400] }} />
+      </Avatar>
+    )
+  },
+  {
     title: "Skype",
-    subheader: "Jan 2015 - Mar 2015 (3 months)",
+    subheader: "Nov 2014 - Jan 2015 (3 months)",
     description: ["Community Moderator"],
     icon: (
       <Avatar>
@@ -76,7 +76,7 @@ const events = [
   },
   {
     title: "Praxis Network",
-    subheader: "Oct 2014 - Jan 2015 (4 months)",
+    subheader: "Aug 2014 - Nov 2014 (4 months)",
     description: ["Software Developer Intern (PHP/Symphony)"],
     icon: (
       <Avatar>
@@ -86,7 +86,7 @@ const events = [
   },
   {
     title: "British University in Egypt",
-    subheader: "Sep 2014 - Sep 2015 (1 Year)",
+    subheader: "Sep 2013 - Aug 2014 (1 Year)",
     description: ["Teaching Assistant (c/c++, Java)"],
     icon: (
       <Avatar>
