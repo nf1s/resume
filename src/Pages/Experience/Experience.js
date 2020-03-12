@@ -25,12 +25,22 @@ const styles = theme => ({
 
 const events = [
   {
-    title: "Hem Design Studio",
-    subheader: "Dec 2018 - March 2019 (1 year, 4 months)",
-    description: ["Backend Tech Lead (Python/Django, Go, React)"],
+    title: "Fyndiq",
+    subheader: "March 2020 - Present day ",
+    description: ["Software Developer (Python/Sanic, React)"],
     icon: (
       <Avatar>
         <WorkIcon style={{ color: pink[900] }} />
+      </Avatar>
+    )
+  },
+  {
+    title: "Hem Design Studio",
+    subheader: "Dec 2018 - March 2020 (1 year, 4 months)",
+    description: ["Backend Tech Lead (Python/Django, Go, React)"],
+    icon: (
+      <Avatar>
+        <WorkIcon style={{ color: pink[800] }} />
       </Avatar>
     )
   },
@@ -40,7 +50,7 @@ const events = [
     description: ["Software Developer (Python/Flask, AngularJs)"],
     icon: (
       <Avatar>
-        <WorkIcon style={{ color: pink[800] }} />
+        <WorkIcon style={{ color: pink[700] }} />
       </Avatar>
     )
   },
@@ -50,7 +60,7 @@ const events = [
     description: ["Software Developer (Python/Django)"],
     icon: (
       <Avatar>
-        <WorkIcon style={{ color: pink[700] }} />
+        <WorkIcon style={{ color: pink[600] }} />
       </Avatar>
     )
   },
@@ -60,7 +70,7 @@ const events = [
     description: ["Software Developer Remote (Python/Django)"],
     icon: (
       <Avatar>
-        <WorkIcon style={{ color: pink[400] }} />
+        <WorkIcon style={{ color: pink[500] }} />
       </Avatar>
     )
   },
@@ -70,7 +80,7 @@ const events = [
     description: ["Community Moderator"],
     icon: (
       <Avatar>
-        <WorkIcon style={{ color: pink[600] }} />
+        <WorkIcon style={{ color: pink[400] }} />
       </Avatar>
     )
   },
@@ -80,7 +90,7 @@ const events = [
     description: ["Software Developer Intern (PHP/Symphony)"],
     icon: (
       <Avatar>
-        <WorkIcon style={{ color: pink[500] }} />
+        <WorkIcon style={{ color: pink[300] }} />
       </Avatar>
     )
   },
@@ -90,7 +100,7 @@ const events = [
     description: ["Teaching Assistant (c/c++, Java)"],
     icon: (
       <Avatar>
-        <WorkIcon style={{ color: pink[300] }} />
+        <WorkIcon style={{ color: pink[200] }} />
       </Avatar>
     )
   },
@@ -100,7 +110,7 @@ const events = [
     description: ["Intern"],
     icon: (
       <Avatar>
-        <WorkIcon style={{ color: pink[200] }} />
+        <WorkIcon style={{ color: pink[100] }} />
       </Avatar>
     )
   },
