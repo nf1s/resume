@@ -37,41 +37,39 @@ const rows = [
   createData("Go", <ProgressBar finish={70} />),
   createData("React", <ProgressBar finish={65} />),
   createData("ES6", <ProgressBar finish={55} />),
-  createData("AngularJS", <ProgressBar finish={50} />),
+  createData("AngularJS", <ProgressBar finish={50} />)
 ];
 
 function Skills(props) {
   const { classes } = props;
 
   return (
-    <div className={classes.root}>
-      <Grid container spacing={24}>
-        <Grid item xs={8}>
-          <Zoom in={true} style={{ transitionDelay: 20 }}>
-            <Paper className={classes.root}>
-              <Table className={classes.table}>
-                <TableHead>
-                  <TableRow>
-                    <TableCell>Skills</TableCell>
-                    <TableCell align="right">Strength</TableCell>
+    <Grid container spacing={24}>
+      <Grid item xs={8}>
+        <Zoom in={true} style={{ transitionDelay: 20 }}>
+          <Paper className={classes.root}>
+            <Table className={classes.table}>
+              <TableHead>
+                <TableRow>
+                  <TableCell>Skills</TableCell>
+                  <TableCell align="right">Strength</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {rows.map(row => (
+                  <TableRow key={row.id}>
+                    <TableCell component="th" scope="row">
+                      <b>{row.name}</b>
+                    </TableCell>
+                    <TableCell align="right">{row.strength}</TableCell>
                   </TableRow>
-                </TableHead>
-                <TableBody>
-                  {rows.map(row => (
-                    <TableRow key={row.id}>
-                      <TableCell component="th" scope="row">
-                        <b>{row.name}</b>
-                      </TableCell>
-                      <TableCell align="right">{row.strength}</TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
-            </Paper>
-          </Zoom>
-        </Grid>
+                ))}
+              </TableBody>
+            </Table>
+          </Paper>
+        </Zoom>
       </Grid>
-    </div>
+    </Grid>
   );
 }
 
