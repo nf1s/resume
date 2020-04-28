@@ -1,12 +1,14 @@
-import React, { Component } from "react";
-import { Route } from "react-router-dom";
-import AboutMe from "./Pages/AboutMe";
-import Education from "./Pages/Education";
-import Experience from "./Pages/Experience";
-import Impact from "./Pages/Impact";
-import Books from "./Pages/Books";
-import Contact from "./Pages/Contact";
-import Skills from "./Pages/Skills";
+import React, {Component} from 'react';
+import {Route} from 'react-router-dom';
+import AboutMe from './Pages/AboutMe';
+import Education from './Pages/Education';
+import Experience from './Pages/Experience';
+import Impact from './Pages/Impact';
+import Books from './Pages/Books';
+import Contact from './Pages/Contact';
+import Skills from './Pages/Skills';
+import Articles from './Pages/Articles';
+import Projects from './Pages/Projects';
 
 class Routes extends Component {
   render() {
@@ -20,6 +22,8 @@ class Routes extends Component {
         <Route path="/impact" component={Impact} />
         <Route path="/books" component={Books} />
         <Route path="/contact" component={Contact} />
+        <Route path="/articles" component={Articles} />
+        <Route path="/projects" component={Projects} />
       </span>
     );
   }
