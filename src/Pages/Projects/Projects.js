@@ -1,62 +1,69 @@
 import React from 'react';
-import {withStyles} from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
-import Slide from '@material-ui/core/Slide';
-import ImageCard from '../../Components/ImageCard/ImageCard';
 import PropTypes from 'prop-types';
-
-const projects = [
-  {
-    title: 'Code Complete 2nd Ed.',
-    subheader: 'by Steve McConnell',
-    cover: 'https://images.gr-assets.com/books/1396837641l/4845.jpg',
-    url: 'https://www.goodreads.com/book/show/4845.Code_Complete',
-  },
-];
+import {withStyles} from '@material-ui/core/styles';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
+import Zoom from '@material-ui/core/Zoom';
 
 const styles = theme => ({
   root: {
-    flexGrow: 1,
+    width: '100%',
+    marginTop: theme.spacing.unit * 3,
+    overflowX: 'auto',
   },
-  paper: {
-    padding: theme.spacing.unit * 2,
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
-  grid: {
-    alignItems: 'center',
-    textAlign: 'center',
-    justify: 'center',
+  table: {
+    minWidth: 10,
   },
 });
 
+let id = 0;
+function createData(name, description) {
+  id += 1;
+  return {id, name, description};
+}
+
+const rows = [
+  createData(
+    'Covid',
+    'Python package to get covid info from John Hopkins university API and Worldometers.info',
+  ),
+];
+
 function Projects(props) {
   const {classes} = props;
+
   return (
-    <div className={classes.root}>
-      <Grid container spacing={24}>
-        <Grid item xs={12} className={classes.grid}>
-          <div>
-            <h1>My projects</h1>
-          </div>
-        </Grid>
-        {projects.map((article, index) => {
-          return (
-            <Slide
-              direction="left"
-              in={true}
-              key={index}
-              style={{transitionDelay: index * 50}}
-              mountOnEnter
-              unmountOnExit>
-              <Grid item xs={4}>
-                <ImageCard obj={article} index={index} />
-              </Grid>
-            </Slide>
-          );
-        })}
+    <Grid container spacing={24}>
+      <Grid item xs={8}>
+        <Zoom in={true} style={{transitionDelay: 20}}>
+          <Paper className={classes.root}>
+            <Table className={classes.table}>
+              <TableHead>
+                <TableRow>
+                  <TableCell>Projects</TableCell>
+                  <TableCell align="right">Description</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {rows.map(row => (
+                  <TableRow key={row.id}>
+                    <TableCell component="th" scope="row">
+                      <b>{row.name}</b>
+                    </TableCell>
+                    <TableCell align="right">{row.description}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </Paper>
+        </Zoom>
       </Grid>
-    </div>
+    </Grid>
   );
 }
 
