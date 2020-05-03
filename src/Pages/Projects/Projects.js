@@ -67,7 +67,7 @@ function Projects(props) {
               <TableHead>
                 <TableRow>
                   <TableCell>Projects</TableCell>
-                  <TableCell align="right">Description</TableCell>
+                  <TableCell align="left">Description</TableCell>
                   <TableCell align="right">Downloads</TableCell>
                 </TableRow>
               </TableHead>
@@ -77,7 +77,7 @@ function Projects(props) {
                     <TableCell component="th" scope="row">
                       <a href={`${githubUrl}/${row.name}`}>{row.name}</a>
                     </TableCell>
-                    <TableCell align="right">{row.description}</TableCell>
+                    <TableCell align="left">{row.description}</TableCell>
                     <TableCell align="right">{row.downloads}</TableCell>
                   </TableRow>
                 ))}
