@@ -22,15 +22,36 @@ const styles = (theme) => ({
 });
 
 let id = 0;
-function createData(name, description) {
+function createData(name, description, downloads) {
   id += 1;
-  return { id, name, description };
+  return { id, name, description, downloads };
 }
+
+const pepyUrl = process.env.REACT_APP_PEPI_URL;
+const githubUrl = process.env.REACT_APP_GITHUB_URL;
 
 const rows = [
   createData(
-    "Covid",
-    "Python package to get covid info from John Hopkins university API and Worldometers.info"
+    "covid",
+    "Python package to get covid info from John Hopkins university API and Worldometers.info",
+    <img src={`${pepyUrl}/covid`} alt="covid" />
+  ),
+  createData(
+    "fastapi_camelcase",
+    "Package for providing a class for camelizing request and response bodies for fastapi while keeping your python code snake cased.",
+    <img src={`${pepyUrl}/fastapi-camelcase`} alt="fastapi-camelcase" />
+  ),
+  createData(
+    "sanic_camelcase_middleware",
+    "Middleware for camelizing request and response bodies for sanic",
+    <img
+      src={`${pepyUrl}/sanic-camelcase-middleware`}
+      alt="sanic-camelcase-middleware"
+    />
+  ),
+  createData(
+    "go-covid",
+    "Go Package to get information regarding the novel corona virus provided by Johns Hopkins university"
   ),
 ];
 
@@ -39,7 +60,7 @@ function Projects(props) {
 
   return (
     <Grid container spacing={24}>
-      <Grid item xs={8}>
+      <Grid item xs={10}>
         <Zoom in={true} style={{ transitionDelay: 20 }}>
           <Paper className={classes.root}>
             <Table className={classes.table}>
@@ -47,15 +68,17 @@ function Projects(props) {
                 <TableRow>
                   <TableCell>Projects</TableCell>
                   <TableCell align="right">Description</TableCell>
+                  <TableCell align="right">Downloads</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
                 {rows.map((row) => (
                   <TableRow key={row.id}>
                     <TableCell component="th" scope="row">
-                      <b>{row.name}</b>
+                      <a href={`${githubUrl}/${row.name}`}>{row.name}</a>
                     </TableCell>
                     <TableCell align="right">{row.description}</TableCell>
+                    <TableCell align="right">{row.downloads}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
