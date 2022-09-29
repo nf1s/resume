@@ -15,7 +15,7 @@
     "react-material-timeline": "^3.0.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.4.0",
-    "recharts": "^1.8.5",
+    "recharts": "^2.1.14",
     "typeface-roboto": "0.0.54"
   },
   "scripts": {
